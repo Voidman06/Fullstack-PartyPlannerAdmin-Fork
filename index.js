@@ -64,6 +64,8 @@ async function addParty(party) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(party),
     });
+
+    getParties();
   } catch (error) {
     console.error(error);
   }
